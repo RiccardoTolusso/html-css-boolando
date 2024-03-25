@@ -26,6 +26,14 @@
     margin: 10px;
 }
 
+.col-40{
+    width: 40%;
+}
+
+.col-60{
+    width: 60%;
+}
+
 /* END LAYOUT CLASSES*/
 
 /* UTILITY CLASSES */
@@ -39,6 +47,19 @@
 .bg-green{
     background-color: green;
 }
+
+.margin-left-10{
+    margin-left: 10px;
+}
+
+.margin-right-10{
+    margin-right: 10px;
+}
+
+.position-relative{
+    position: relative;
+}
+
 /* END UTILITY */
 
 
@@ -135,3 +156,24 @@ main{
 }
 
 /* END OF MAIN */
+
+
+/* FOOTER */
+footer{
+    background-color: black;
+    color: white;
+    padding: 20px;
+}
+footer a{
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    margin-right: 5px;
+    margin-top: 5px;
+}
+
+footer .find-us{
+    position: absolute;
+    right: 0;
+}
+/* END OF FOOTER */
