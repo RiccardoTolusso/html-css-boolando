@@ -9,13 +9,23 @@
 .row{
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
 }
 
 .col-33{
     width: calc(100%/3);
 }
+
+.row.gap-10{
+    gap: 10px;
+}
 /* END LAYOUT CLASSES*/
+
+/* UTILITY CLASSES */
+.text-align-right{
+    text-align: right;
+}
+
+/* END UTILITY */
 
 header{
     position: fixed;
@@ -23,15 +33,16 @@ header{
     left: 0;
     right: 0;
     background-color: orange;
-    line-height: 3;
+    line-height: 3em;
 }
+
 header a{
     color: white;
     text-decoration: none;
 }
+
 header .logo{
     display: block;
     height: 2em;
-    margin-top: 0.5em;
-    margin:0 auto;
+    margin: 0.5em auto;
 }
