@@ -1,0 +1,37 @@
+
+
+/* LAYOUT CLASSES */
+.container{
+    max-width: 1200px;
+    margin: 0px auto;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.col-33{
+    width: calc(100%/3);
+}
+/* END LAYOUT CLASSES*/
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: orange;
+    line-height: 3;
+}
+header a{
+    color: white;
+    text-decoration: none;
+}
+header .logo{
+    display: block;
+    height: 2em;
+    margin-top: 0.5em;
+    margin:0 auto;
+}
