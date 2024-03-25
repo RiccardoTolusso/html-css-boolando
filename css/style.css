@@ -1,4 +1,8 @@
-
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 /* LAYOUT CLASSES */
 .container{
@@ -11,13 +15,16 @@
     flex-wrap: wrap;
 }
 
-.col-33{
+
+.col-33-no-margin{
     width: calc(100%/3);
 }
 
-.row.gap-10{
-    gap: 10px;
+.col-33{
+    width: calc(100%/3 - 20px);
+    margin: 10px;
 }
+
 /* END LAYOUT CLASSES*/
 
 /* UTILITY CLASSES */
@@ -27,6 +34,8 @@
 
 /* END UTILITY */
 
+
+/* START OF HEADER SECTION */
 header{
     position: fixed;
     top: 0;
@@ -46,3 +55,31 @@ header .logo{
     height: 2em;
     margin: 0.5em auto;
 }
+/* END OF HEADER SECTION */
+
+
+/* START OF MAIN(catalogue) SECTION */
+
+
+.product img{
+    max-width: 100%;
+}
+.product img.hidden{
+    display: none;
+}
+
+
+.product .name{
+    text-transform: uppercase;
+}
+.product .price{
+    display: inline;
+    padding-right: 8px;
+    color: red;
+}
+.product .price.old{
+    font-weight: 100;
+    text-decoration: line-through;
+    color: black;
+}
+/* END OF MAIN */
