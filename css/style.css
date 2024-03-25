@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
 }
 
 /* LAYOUT CLASSES */
@@ -32,6 +33,12 @@
     text-align: right;
 }
 
+.bg-red{
+    background-color: red;
+}
+.bg-green{
+    background-color: green;
+}
 /* END UTILITY */
 
 
@@ -43,6 +50,7 @@ header{
     right: 0;
     background-color: orange;
     line-height: 3em;
+    z-index: 1;
 }
 
 header a{
@@ -59,15 +67,28 @@ header .logo{
 
 
 /* START OF MAIN(catalogue) SECTION */
+main{
+    padding-top: 4em;
+    padding-bottom: 50px;
+}
 
+.product{
+    position: relative;
+}
 
 .product img{
     max-width: 100%;
+    display: block;
 }
 .product img.hidden{
     display: none;
 }
-
+.product:hover img.shown{
+    display: none;
+}
+.product:hover img.hidden{
+    display: block;
+}
 
 .product .name{
     text-transform: uppercase;
@@ -82,4 +103,35 @@ header .logo{
     text-decoration: line-through;
     color: black;
 }
+
+    /* heart over immages with hoover and active effects */
+.product .heart{
+    background-color: white;
+    padding: 5px 10px;
+    position: absolute;
+    top: 10px;
+    right: 0;
+    font-size: 1.5em;
+}
+.product .heart:hover{
+    color: red;
+    cursor: pointer;
+}
+.product .heart:active{
+    background-color: red;
+    color: white;
+}
+
+    /* labels over image */
+.product .labels{
+    position: absolute;
+    top: 80%;    
+    left: 0;
+}
+.product .labels .label{
+    display: inline-block;
+    padding: 3px 6px;
+    color: white;
+}
+
 /* END OF MAIN */
